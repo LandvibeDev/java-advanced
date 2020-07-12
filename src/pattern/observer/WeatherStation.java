@@ -11,7 +11,7 @@ public class WeatherStation {
         this.displayB = new WeatherDisplay("B 방송국");
         this.displayC = new WeatherDisplay("C 방송국");
 
-        this.weatherData = new WeatherData();
+        this.weatherData = new WeatherData(); // 기상청
         this.weatherData.registerObserver(displayA);
         this.weatherData.registerObserver(displayB);
         // C는 등록 안함
